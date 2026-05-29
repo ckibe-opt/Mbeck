@@ -1,0 +1,121 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- UNIVERSAL PREAMBLE BLOCK ---
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.0cm, right=2.0cm]{geometry}
+\usepackage{fontspec}
+\usepackage[english, bidi=basic, provide=*]{babel}
+\usepackage{amsmath} % Added to fix \text and math command errors
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+% Assign Noto Sans as the primary font
+\babelfont{rm}{Noto Sans}
+
+% Custom Styling
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule]
+\onehalfspacing
+
+% --- DOCUMENT INFO ---
+\title{\Huge \textbf{myShop: Technical \& Operational Documentation} \\ \large \textit{AI-Powered Offline Point of Sale \& Inventory Management}}
+\author{Documentation Team}
+\date{January 2026}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Executive Summary}
+The \textbf{myShop} application (formerly Mbeck enterprise) is a sophisticated, offline-first Point of Sale (POS) and inventory management solution. Specifically engineered for retail shops and mobile money (M-Pesa) agents, it addresses the challenges of low-connectivity environments by providing high-speed local data persistence, advanced financial reconciliation, and a pioneering AI-driven visual product recognition engine.
+
+The core value proposition lies in its ability to turn entry-level Android devices, such as those utilizing the Unisoc T615 chipset, into powerful business analytical tools without the need for cloud subscriptions or active internet connectivity.
+
+\section{AI Visual Recognition Architecture}
+The defining feature of myShop is its visual matching engine. Unlike standard barcode scanners that require high-contrast labels, myShop utilizes computer vision to identify products based on their physical branding and packaging essence.
+
+\subsection{EfficientNet-Lite0 Feature Extraction}
+The application utilizes a quantized \textbf{EfficientNet-Lite0} model via the TensorFlow Lite (TFLite) framework. 
+\begin{itemize}
+    \item \textbf{Input Processing:} Images are resized to a $224 \times 224$ RGB matrix.
+    \item \textbf{Vectorization:} The model extracts a 1280-dimension mathematical "feature vector" (embedding) from the penultimate layer.
+    \item \textbf{Similarity Metric:} Comparison is performed using \textbf{Cosine Similarity}, measuring the angular distance between a live scan and the stored inventory vectors.
+\end{itemize}
+
+\subsection{The "Global AI Training" Mechanism}
+To improve accuracy, the system implements a proprietary \textit{Multi-Perspective Training} strategy. When a user triggers the "Train AI" function in the inventory:
+\begin{enumerate}
+    \item The system performs a triple-crop analysis (Center, Top-Left, Bottom-Right) on existing product photos.
+    \item These perspectives are averaged into a stable "Master Centroid."
+    \item This process allows the AI to "relearn" branding details on packaging edges that might be missed by a single-center focus.
+\end{enumerate}
+
+\section{Financial Management \& Accounting}
+myShop provides a dual-layer financial tracking system designed to eliminate "lost money" through rigorous reconciliation and profit analysis.
+
+\subsection{The Profit Engine}
+The profit logic is calculated at the transaction level using the formula:
+\[ \text{Net Profit} = (\text{Selling Price} - \text{Applied Discount}) - \text{Original Buying Cost} \]
+By joining the \texttt{txn} (transaction) table with the \texttt{inventory} table, the application generates real-time reports on the most profitable items, rather than just those with the highest volume.
+
+\subsection{Accounting Reconciliation \& Disparity Tracking}
+The Accounting Screen serves as a digital ledger for shop owners to balance physical cash and digital balances across multiple providers (M-Pesa, Co-op, Equity, Airtel). 
+\begin{itemize}
+    \item \textbf{Mathematical Input:} Fields support inline addition (e.g., $5000 + 1200$) to help users sum up totals without leaving the app.
+    \item \textbf{Disparity Analysis:} The system compares the "Expected Total" (Last Count + Sales since last count) against the "Actual Count" provided by the user, immediately highlighting surpluses or shortages.
+\end{itemize}
+
+\section{Security \& Anti-Fraud Systems}
+Despite being an offline application, myShop implements enterprise-grade security for customer interaction.
+
+\subsection{Digital Receipt Verification (Version 10)}
+To prevent customers from presenting fake "Payment Successful" WhatsApp messages, myShop generates a unique \textbf{Security Signature} for every sale.
+\begin{itemize}
+    \item \textbf{Digital Fingerprint:} During a sale, a signature is generated using the transaction timestamp and total amount, which is then permanently logged in the database.
+    \item \textbf{The Verification Tool:} Employees can use the "Verify Receipt" tool on the home screen to input a receipt's Ref Code and Signature. The system performs a direct SQL lookup to confirm if the details match the secure logs.
+\end{itemize}
+
+\section{Technical Infrastructure}
+The application is built on the Flutter framework, prioritizing low-latency performance and cross-version compatibility.
+
+\subsection{Database Schema (SQLite)}
+The database utilizes \texttt{sqflite} with a versioned migration path. Current schema highlights include:
+\begin{itemize}
+    \item \textbf{inventory:} Stores primary product data and the master visual vector.
+    \item \textbf{inventory\_vectors:} A memory table that stores "Secondary Perspectives" for items, allowing the AI to remember how an item looks under different lighting.
+    \item \textbf{txn:} A high-indexed table for rapid history retrieval.
+\end{itemize}
+
+\subsection{Performance on Low-End Hardware}
+Special consideration was given to the Unisoc T615 chipset:
+\begin{itemize}
+    \item \textbf{EMA Momentum:} Exponential Moving Averages (EMA) with a momentum of 0.95 are used for online vector refinement.
+    \item \textbf{Batch Restraint:} During AI training, the system implements a 50ms artificial delay between items to prevent thermal throttling.
+\end{itemize}
+
+\section{User Operational Workflows}
+
+\subsection{Adding New Inventory}
+1. Capture a clear, top-down photo of the product. \\
+2. Enter the name, buying price, and selling price. \\
+3. The AI will automatically generate the initial visual signature. \\
+4. (Recommended) Use the "Train AI with new Angle" button to capture the back or side of the package for better recognition.
+
+\subsection{Performing a Quick Sell}
+1. Open the scanner. \\
+2. Point the camera at the product. \\
+3. A vertical list of the top 5 AI matches will appear. \\
+4. Select the item, apply a discount if necessary, and "Proceed."
+
+\subsection{Daily Closing}
+1. Use the "Cash Count" tool to count physical notes and coins. \\
+2. Save the cash total to the Accounting module. \\
+3. Input digital balances (M-Pesa, Bank). \\
+4. Review the Disparity Report to ensure the shop is "Balanced."
+
+\section{Conclusion}
+myShop represents a bridge between traditional retail and modern AI technology. By keeping all data local and using advanced mathematical recognition, it provides shop owners with a level of control and security previously reserved for high-end, cloud-integrated ERP systems.
+
+\end{document}

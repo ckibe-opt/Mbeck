@@ -1,0 +1,23 @@
+name: mbeck_modules
+description: Modular business logic for the Mbeck commerce platform
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  mbeck_shared:
+    path: ../mbeck_shared
+  sqflite: ^2.3.0
+  shelf: ^1.4.1
+  shelf_router: ^1.1.4
+  intl: ">=0.19.0 <0.21.0"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0

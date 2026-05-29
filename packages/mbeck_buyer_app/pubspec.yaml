@@ -1,0 +1,56 @@
+name: mbeck_go
+description: Mbeck Go - Customer ordering and discovery app.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  bonsoir: ^6.0.1
+  http: ^1.6.0
+  provider: ^6.1.5+1
+  mobile_scanner: ^7.1.4
+  cached_network_image: ^3.4.1
+  shared_preferences: ^2.5.4
+  mbeck_shared:
+    path: ../mbeck_shared
+  qr_flutter: ^4.1.0
+  supabase_flutter: ^2.12.0
+  sqflite: ^2.4.1
+  sqflite_common_ffi: ^2.3.2
+  path: ^1.9.0
+  intl: ^0.19.0
+  camera: ^0.11.0+2
+  google_fonts: ^8.0.0
+  drift: ^2.30.1
+  drift_flutter: ^0.2.8
+  sqlite3_flutter_libs: ^0.5.41
+  connectivity_plus: ^7.0.0
+  cryptography: ^2.9.0
+  crypto: ^3.0.6
+  uuid: ^4.0.0
+  share_plus: ^12.0.1
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  drift_dev: ^2.30.1
+  build_runner: ^2.10.5
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/mbeck_go_icon_1771008322057.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true

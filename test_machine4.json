@@ -1,0 +1,743 @@
+{"protocolVersion":"0.1.1","runnerVersion":null,"pid":131036,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"C:/dev/Mbeckapp_seller-4ab538ed/test/database_migration_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading C:/dev/Mbeckapp_seller-4ab538ed/test/database_migration_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":2}
+{"suite":{"id":2,"platform":"vm","path":"C:/dev/Mbeckapp_seller-4ab538ed/test/device_service_test.dart"},"type":"suite","time":6}
+{"test":{"id":3,"name":"loading C:/dev/Mbeckapp_seller-4ab538ed/test/device_service_test.dart","suiteID":2,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":6}
+{"suite":{"id":4,"platform":"vm","path":"C:/dev/Mbeckapp_seller-4ab538ed/test/event_model_test.dart"},"type":"suite","time":6}
+{"test":{"id":5,"name":"loading C:/dev/Mbeckapp_seller-4ab538ed/test/event_model_test.dart","suiteID":4,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":6}
+{"suite":{"id":6,"platform":"vm","path":"C:/dev/Mbeckapp_seller-4ab538ed/test/event_service_test.dart"},"type":"suite","time":7}
+{"test":{"id":7,"name":"loading C:/dev/Mbeckapp_seller-4ab538ed/test/event_service_test.dart","suiteID":6,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":7}
+{"count":14,"time":8,"type":"allSuites"}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":5,"error":"Failed to load \"C:/dev/Mbeckapp_seller-4ab538ed/test/event_model_test.dart\":\nCompilation failed for testPath=C:/dev/Mbeckapp_seller-4ab538ed/test/event_model_test.dart: test/event_model_test.dart:7:21: Error: Undefined name 'Event'.\n      final event = Event.create(\n                    ^^^^^\ntest/event_model_test.dart:22:21: Error: Undefined name 'Event'.\n      final event = Event.create(\n                    ^^^^^\ntest/event_model_test.dart:33:21: Error: Undefined name 'Event'.\n      final event = Event.create(\n                    ^^^^^\ntest/event_model_test.dart:39:24: Error: Method not found: 'Event'.\n      final tampered = Event(\n                       ^^^^^\ntest/event_model_test.dart:53:24: Error: Undefined name 'Event'.\n      final original = Event.create(\n                       ^^^^^\ntest/event_model_test.dart:61:24: Error: Undefined name 'Event'.\n      final restored = Event.fromMap(map);\n                       ^^^^^\ntest/event_model_test.dart:74:24: Error: Undefined name 'Event'.\n      final original = Event.create(\n                       ^^^^^\ntest/event_model_test.dart:94:22: Error: Undefined name 'Event'.\n      final event1 = Event.create(\n                     ^^^^^\ntest/event_model_test.dart:99:22: Error: Undefined name 'Event'.\n      final event2 = Event.create(\n                     ^^^^^\n.","stackTrace":"","isFailure":false,"type":"error","time":2926}
+{"testID":5,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":2929}
+{"suite":{"id":8,"platform":"vm","path":"C:/dev/Mbeckapp_seller-4ab538ed/test/integration_test.dart"},"type":"suite","time":2931}
+{"test":{"id":9,"name":"loading C:/dev/Mbeckapp_seller-4ab538ed/test/integration_test.dart","suiteID":8,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":2932}
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":2966}
+{"group":{"id":10,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":4,"line":null,"column":null,"url":null},"type":"group","time":2974}
+{"test":{"id":11,"name":"(setUpAll)","suiteID":0,"groupIDs":[10],"metadata":{"skip":false,"skipReason":null},"line":13,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/database_migration_test.dart"},"type":"testStart","time":2975}
+{"testID":1,"error":"Error: The Dart compiler exited unexpectedly.","stackTrace":"package:flutter_tools/src/base/common.dart 34:3  throwToolExit\npackage:flutter_tools/src/compile.dart 911:11    DefaultResidentCompiler._compile.<fn>\ndart:async/zone.dart 1538:47                     _rootRunUnary\ndart:async/zone.dart 1429:19                     _CustomZone.runUnary\ndart:async/future_impl.dart 948:45               Future._propagateToListeners.handleValueCallback\ndart:async/future_impl.dart 977:13               Future._propagateToListeners\ndart:async/future_impl.dart 862:9                Future._propagateToListeners\ndart:async/future_impl.dart 720:5                Future._completeWithValue\ndart:async/future_impl.dart 804:7                Future._asyncCompleteWithValue.<fn>\ndart:async/zone.dart 1525:13                     _rootRun\ndart:async/zone.dart 1422:19                     _CustomZone.run\ndart:async/zone.dart 1321:7                      _CustomZone.runGuarded\ndart:async/zone.dart 1362:23                     _CustomZone.bindCallbackGuarded.<fn>\ndart:async/schedule_microtask.dart 40:35         _microtaskLoop\ndart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop\ndart:isolate-patch/isolate_patch.dart 127:13     _runPendingImmediateCallback\ndart:isolate-patch/isolate_patch.dart 194:5      _RawReceivePort._handleMessage\n","isFailure":false,"type":"error","time":3073}
+{"testID":11,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":3103}
+{"group":{"id":12,"suiteID":0,"parentID":10,"name":"Database Migration Tests","metadata":{"skip":false,"skipReason":null},"testCount":4,"line":37,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/database_migration_test.dart"},"type":"group","time":3105}
+{"test":{"id":13,"name":"Database Migration Tests events table is created on init","suiteID":0,"groupIDs":[10,12],"metadata":{"skip":false,"skipReason":null},"line":38,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/database_migration_test.dart"},"type":"testStart","time":3105}
+{"testID":13,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":3121}
+{"testID":13,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":3212}
+{"testID":13,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":3213}
+{"testID":13,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":3215}
+{"testID":13,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":3231}
+{"testID":13,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":3234}
+{"testID":13,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":3237}
+{"testID":13,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":3239}
+{"testID":13,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":3241}
+{"testID":13,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":3245}
+{"testID":13,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 1, readOnly: false, singleInstance: false}}}","type":"print","time":3271}
+{"testID":13,"messageType":"print","message":"???? Service category migration completed","type":"print","time":3272}
+{"testID":13,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":3274}
+{"testID":13,"messageType":"print","message":"???? Room type migration completed","type":"print","time":3278}
+{"testID":13,"messageType":"print","message":"??? Module migrations completed","type":"print","time":3279}
+{"testID":13,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":3283}
+{"testID":13,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":3288}
+{"testID":13,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3313}
+{"test":{"id":14,"name":"Database Migration Tests events table has correct schema","suiteID":0,"groupIDs":[10,12],"metadata":{"skip":false,"skipReason":null},"line":49,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/database_migration_test.dart"},"type":"testStart","time":3314}
+{"testID":14,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":3322}
+{"testID":14,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":3336}
+{"testID":14,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":3338}
+{"testID":14,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":3338}
+{"testID":14,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":3350}
+{"testID":14,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":3354}
+{"testID":14,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":3356}
+{"testID":14,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":3360}
+{"testID":14,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":3360}
+{"testID":14,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":3360}
+{"testID":14,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 2, readOnly: false, singleInstance: false}}}","type":"print","time":3376}
+{"testID":14,"messageType":"print","message":"???? Service category migration completed","type":"print","time":3377}
+{"testID":14,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":3378}
+{"testID":3,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":3381}
+{"group":{"id":15,"suiteID":2,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":4,"line":null,"column":null,"url":null},"type":"group","time":3381}
+{"group":{"id":16,"suiteID":2,"parentID":15,"name":"DeviceService Tests","metadata":{"skip":false,"skipReason":null},"testCount":4,"line":7,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/device_service_test.dart"},"type":"group","time":3382}
+{"test":{"id":17,"name":"DeviceService Tests getShopId generates and persists shop_id","suiteID":2,"groupIDs":[15,16],"metadata":{"skip":false,"skipReason":null},"line":15,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/device_service_test.dart"},"type":"testStart","time":3382}
+{"testID":14,"messageType":"print","message":"???? Room type migration completed","type":"print","time":3387}
+{"testID":14,"messageType":"print","message":"??? Module migrations completed","type":"print","time":3387}
+{"testID":14,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":3392}
+{"testID":14,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":3394}
+{"testID":14,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3411}
+{"test":{"id":18,"name":"Database Migration Tests events table indexes are created","suiteID":0,"groupIDs":[10,12],"metadata":{"skip":false,"skipReason":null},"line":67,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/database_migration_test.dart"},"type":"testStart","time":3412}
+{"testID":18,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":3420}
+{"testID":18,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":3431}
+{"testID":18,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":3432}
+{"testID":18,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":3433}
+{"testID":17,"messageType":"print","message":"???? Generated temporary home_shop_id (not persisted): shop_1771558243072_2825","type":"print","time":3444}
+{"testID":17,"messageType":"print","message":"???? Generated temporary home_shop_id (not persisted): shop_1771558243079_9860","type":"print","time":3445}
+{"testID":18,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":3445}
+{"testID":17,"error":"Expected: 'shop_1771558243072_2825'\n  Actual: 'shop_1771558243079_9860'\n   Which: is different.\n          Expected: ... 71558243072_2825\n            Actual: ... 71558243079_9860\n                                  ^\n           Differ at offset 17\n","stackTrace":"package:matcher                                     expect\npackage:flutter_test/src/widget_tester.dart 473:18  expect\ntest\\device_service_test.dart 25:7                  main.<fn>.<fn>\n","isFailure":true,"type":"error","time":3446}
+{"testID":17,"result":"failure","skipped":false,"hidden":false,"type":"testDone","time":3447}
+{"testID":18,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":3447}
+{"test":{"id":19,"name":"DeviceService Tests getDeviceId generates and persists device_id","suiteID":2,"groupIDs":[15,16],"metadata":{"skip":false,"skipReason":null},"line":28,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/device_service_test.dart"},"type":"testStart","time":3447}
+{"testID":18,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":3448}
+{"testID":18,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":3451}
+{"testID":18,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":3453}
+{"testID":19,"messageType":"print","message":"???? Generated new device_id: device_1771558243111_1774","type":"print","time":3453}
+{"testID":19,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3454}
+{"test":{"id":20,"name":"DeviceService Tests shop_id and device_id are different","suiteID":2,"groupIDs":[15,16],"metadata":{"skip":false,"skipReason":null},"line":41,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/device_service_test.dart"},"type":"testStart","time":3454}
+{"testID":18,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":3455}
+{"testID":20,"messageType":"print","message":"???? Generated temporary home_shop_id (not persisted): shop_1771558243118_8416","type":"print","time":3459}
+{"testID":20,"messageType":"print","message":"???? Generated new device_id: device_1771558243118_8416","type":"print","time":3460}
+{"testID":20,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3461}
+{"test":{"id":21,"name":"DeviceService Tests IDs are cached after first generation","suiteID":2,"groupIDs":[15,16],"metadata":{"skip":false,"skipReason":null},"line":48,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/device_service_test.dart"},"type":"testStart","time":3462}
+{"testID":21,"messageType":"print","message":"???? Generated temporary home_shop_id (not persisted): shop_1771558243125_5801","type":"print","time":3465}
+{"testID":21,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3466}
+{"testID":18,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 3, readOnly: false, singleInstance: false}}}","type":"print","time":3476}
+{"testID":18,"messageType":"print","message":"???? Service category migration completed","type":"print","time":3477}
+{"testID":18,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":3477}
+{"testID":18,"messageType":"print","message":"???? Room type migration completed","type":"print","time":3478}
+{"testID":18,"messageType":"print","message":"??? Module migrations completed","type":"print","time":3480}
+{"testID":18,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":3482}
+{"testID":18,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":3485}
+{"suite":{"id":22,"platform":"vm","path":"C:/dev/Mbeckapp_seller-4ab538ed/test/models/enterprise_models_test.dart"},"type":"suite","time":3502}
+{"test":{"id":23,"name":"loading C:/dev/Mbeckapp_seller-4ab538ed/test/models/enterprise_models_test.dart","suiteID":22,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":3502}
+{"testID":18,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3506}
+{"test":{"id":24,"name":"Database Migration Tests can insert event into events table","suiteID":0,"groupIDs":[10,12],"metadata":{"skip":false,"skipReason":null},"line":81,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/database_migration_test.dart"},"type":"testStart","time":3506}
+{"testID":24,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":3512}
+{"testID":24,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":3521}
+{"testID":24,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":3522}
+{"testID":24,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":3523}
+{"testID":24,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":3530}
+{"testID":24,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":3532}
+{"testID":24,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":3533}
+{"testID":24,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":3534}
+{"testID":24,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":3536}
+{"testID":24,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":3538}
+{"testID":24,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 4, readOnly: false, singleInstance: false}}}","type":"print","time":3547}
+{"testID":24,"messageType":"print","message":"???? Service category migration completed","type":"print","time":3548}
+{"testID":24,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":3549}
+{"testID":24,"messageType":"print","message":"???? Room type migration completed","type":"print","time":3554}
+{"testID":24,"messageType":"print","message":"??? Module migrations completed","type":"print","time":3555}
+{"testID":24,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":3558}
+{"testID":24,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":3559}
+{"testID":24,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3575}
+{"test":{"id":25,"name":"(tearDownAll)","suiteID":0,"groupIDs":[10],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":3575}
+{"testID":25,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":3578}
+{"suite":{"id":26,"platform":"vm","path":"C:/dev/Mbeckapp_seller-4ab538ed/test/models/shop_subscription_test.dart"},"type":"suite","time":3607}
+{"test":{"id":27,"name":"loading C:/dev/Mbeckapp_seller-4ab538ed/test/models/shop_subscription_test.dart","suiteID":26,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":3607}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":23,"error":"Failed to load \"C:/dev/Mbeckapp_seller-4ab538ed/test/models/enterprise_models_test.dart\":\nCompilation failed for testPath=C:/dev/Mbeckapp_seller-4ab538ed/test/models/enterprise_models_test.dart: test/models/enterprise_models_test.dart:25:20: Error: Undefined name 'Shop'.\n      final shop = Shop.fromMap(mockShopMap);\n                   ^^^^\ntest/models/enterprise_models_test.dart:38:20: Error: Undefined name 'Shop'.\n      final shop = Shop.fromMap(mapWithoutCurrency);\n                   ^^^^\ntest/models/enterprise_models_test.dart:47:20: Error: Undefined name 'Shop'.\n      final shop = Shop.fromMap(mapWithNulls);\n                   ^^^^\ntest/models/enterprise_models_test.dart:53:20: Error: Undefined name 'Shop'.\n      final shop = Shop.fromMap(mockShopMap);\n                   ^^^^\ntest/models/enterprise_models_test.dart:76:22: Error: Undefined name 'ShopMember'.\n      final member = ShopMember.fromMap(mockMemberMap);\n                     ^^^^^^^^^^\ntest/models/enterprise_models_test.dart:87:22: Error: Undefined name 'ShopMember'.\n      final member = ShopMember.fromMap(mapWithoutUser);\n                     ^^^^^^^^^^\ntest/models/enterprise_models_test.dart:92:22: Error: Undefined name 'ShopMember'.\n      final member = ShopMember.fromMap(mockMemberMap);\n                     ^^^^^^^^^^\n.","stackTrace":"","isFailure":false,"type":"error","time":5581}
+{"testID":23,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":5581}
+{"suite":{"id":28,"platform":"vm","path":"C:/dev/Mbeckapp_seller-4ab538ed/test/performance_integration_test.dart"},"type":"suite","time":5582}
+{"test":{"id":29,"name":"loading C:/dev/Mbeckapp_seller-4ab538ed/test/performance_integration_test.dart","suiteID":28,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":5582}
+{"testID":7,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":5746}
+{"group":{"id":30,"suiteID":6,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":10,"line":null,"column":null,"url":null},"type":"group","time":5747}
+{"test":{"id":31,"name":"(setUpAll)","suiteID":6,"groupIDs":[30],"metadata":{"skip":false,"skipReason":null},"line":11,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/event_service_test.dart"},"type":"testStart","time":5747}
+{"testID":31,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":5831}
+{"group":{"id":32,"suiteID":6,"parentID":30,"name":"EventService Tests","metadata":{"skip":false,"skipReason":null},"testCount":10,"line":29,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/event_service_test.dart"},"type":"group","time":5831}
+{"test":{"id":33,"name":"EventService Tests emitEvent creates and stores event","suiteID":6,"groupIDs":[30,32],"metadata":{"skip":false,"skipReason":null},"line":30,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/event_service_test.dart"},"type":"testStart","time":5831}
+{"testID":33,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":5875}
+{"testID":33,"messageType":"print","message":"?????? SecureStorage Error (getDatabaseKey): MissingPluginException(No implementation found for method read on channel plugins.it_nomads.com/flutter_secure_storage)","type":"print","time":5881}
+{"testID":33,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":5937}
+{"testID":33,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":5939}
+{"testID":33,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":5940}
+{"testID":33,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":5957}
+{"testID":33,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":5960}
+{"testID":33,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":5963}
+{"testID":33,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":5969}
+{"testID":33,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":5969}
+{"testID":33,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":5976}
+{"testID":33,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 1, readOnly: false, singleInstance: false}}}","type":"print","time":5999}
+{"testID":33,"messageType":"print","message":"???? Service category migration completed","type":"print","time":6002}
+{"testID":33,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":6004}
+{"testID":33,"messageType":"print","message":"???? Room type migration completed","type":"print","time":6010}
+{"testID":33,"messageType":"print","message":"??? Module migrations completed","type":"print","time":6011}
+{"testID":33,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":6019}
+{"testID":33,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":6025}
+{"testID":33,"messageType":"print","message":"???? Generated temporary home_shop_id (not persisted): shop_1771558245710_235","type":"print","time":6070}
+{"testID":33,"messageType":"print","message":"???? Generated new device_id: device_1771558245711_1377","type":"print","time":6071}
+{"testID":33,"messageType":"print","message":"???? Event emitted: TEST_EVENT (ece25bb0...)","type":"print","time":6082}
+{"testID":33,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6091}
+{"testID":33,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6092}
+{"testID":9,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":6094}
+{"group":{"id":34,"suiteID":8,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":7,"line":null,"column":null,"url":null},"type":"group","time":6094}
+{"test":{"id":35,"name":"(setUpAll)","suiteID":8,"groupIDs":[34],"metadata":{"skip":false,"skipReason":null},"line":9,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/integration_test.dart"},"type":"testStart","time":6095}
+{"test":{"id":36,"name":"EventService Tests emitEvent includes shop_id and device_id","suiteID":6,"groupIDs":[30,32],"metadata":{"skip":false,"skipReason":null},"line":52,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/event_service_test.dart"},"type":"testStart","time":6096}
+{"testID":36,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":6106}
+{"testID":36,"messageType":"print","message":"?????? SecureStorage Error (getDatabaseKey): MissingPluginException(No implementation found for method read on channel plugins.it_nomads.com/flutter_secure_storage)","type":"print","time":6109}
+{"testID":36,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":6127}
+{"testID":36,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":6129}
+{"testID":36,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":6130}
+{"testID":36,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":6146}
+{"testID":36,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":6147}
+{"testID":36,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":6148}
+{"testID":36,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":6151}
+{"testID":36,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":6154}
+{"testID":36,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":6156}
+{"testID":36,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 2, readOnly: false, singleInstance: false}}}","type":"print","time":6171}
+{"testID":36,"messageType":"print","message":"???? Service category migration completed","type":"print","time":6173}
+{"testID":36,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":6174}
+{"testID":36,"messageType":"print","message":"???? Room type migration completed","type":"print","time":6178}
+{"testID":36,"messageType":"print","message":"??? Module migrations completed","type":"print","time":6180}
+{"testID":36,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":6185}
+{"testID":36,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":6187}
+{"testID":35,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":6194}
+{"group":{"id":37,"suiteID":8,"parentID":34,"name":"Phase 1 Integration Tests","metadata":{"skip":false,"skipReason":null},"testCount":7,"line":27,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/integration_test.dart"},"type":"group","time":6194}
+{"test":{"id":38,"name":"Phase 1 Integration Tests Complete sale flow emits correct events","suiteID":8,"groupIDs":[34,37],"metadata":{"skip":false,"skipReason":null},"line":28,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/integration_test.dart"},"type":"testStart","time":6194}
+{"testID":36,"messageType":"print","message":"???? Event emitted: TEST_EVENT (c403bb92...)","type":"print","time":6202}
+{"testID":36,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6204}
+{"testID":36,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6205}
+{"test":{"id":39,"name":"EventService Tests getUnsyncedEvents returns only unsynced events","suiteID":6,"groupIDs":[30,32],"metadata":{"skip":false,"skipReason":null},"line":62,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/event_service_test.dart"},"type":"testStart","time":6205}
+{"testID":39,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":6211}
+{"testID":39,"messageType":"print","message":"?????? SecureStorage Error (getDatabaseKey): MissingPluginException(No implementation found for method read on channel plugins.it_nomads.com/flutter_secure_storage)","type":"print","time":6212}
+{"testID":38,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":6216}
+{"testID":39,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":6225}
+{"testID":39,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":6226}
+{"testID":39,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":6227}
+{"testID":39,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":6238}
+{"testID":39,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":6240}
+{"testID":39,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":6241}
+{"testID":38,"messageType":"print","message":"?????? SecureStorage Error (getDatabaseKey): MissingPluginException(No implementation found for method read on channel plugins.it_nomads.com/flutter_secure_storage)","type":"print","time":6243}
+{"testID":39,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":6243}
+{"testID":39,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":6244}
+{"testID":39,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":6246}
+{"testID":39,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 3, readOnly: false, singleInstance: false}}}","type":"print","time":6259}
+{"testID":39,"messageType":"print","message":"???? Service category migration completed","type":"print","time":6260}
+{"testID":39,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":6261}
+{"testID":39,"messageType":"print","message":"???? Room type migration completed","type":"print","time":6266}
+{"testID":39,"messageType":"print","message":"??? Module migrations completed","type":"print","time":6268}
+{"testID":39,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":6271}
+{"testID":39,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":6274}
+{"testID":39,"messageType":"print","message":"???? Event emitted: TEST_EVENT_1 (a652e46a...)","type":"print","time":6286}
+{"testID":39,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6289}
+{"testID":39,"messageType":"print","message":"???? Event emitted: TEST_EVENT_2 (3a296b08...)","type":"print","time":6294}
+{"testID":39,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6294}
+{"testID":39,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6295}
+{"test":{"id":40,"name":"EventService Tests getUnsyncedEvents respects limit","suiteID":6,"groupIDs":[30,32],"metadata":{"skip":false,"skipReason":null},"line":83,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/event_service_test.dart"},"type":"testStart","time":6295}
+{"testID":40,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":6300}
+{"testID":40,"messageType":"print","message":"?????? SecureStorage Error (getDatabaseKey): MissingPluginException(No implementation found for method read on channel plugins.it_nomads.com/flutter_secure_storage)","type":"print","time":6302}
+{"testID":38,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":6303}
+{"testID":38,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":6304}
+{"testID":38,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":6306}
+{"testID":40,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":6312}
+{"testID":40,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":6314}
+{"testID":40,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":6315}
+{"testID":38,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":6323}
+{"testID":38,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":6325}
+{"testID":40,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":6327}
+{"testID":38,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":6327}
+{"testID":38,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":6329}
+{"testID":40,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":6329}
+{"testID":40,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":6331}
+{"testID":38,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":6331}
+{"testID":40,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":6332}
+{"testID":38,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":6335}
+{"testID":40,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":6336}
+{"testID":40,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":6340}
+{"testID":40,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 4, readOnly: false, singleInstance: false}}}","type":"print","time":6356}
+{"testID":40,"messageType":"print","message":"???? Service category migration completed","type":"print","time":6356}
+{"testID":40,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":6357}
+{"testID":38,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 1, readOnly: false, singleInstance: false}}}","type":"print","time":6361}
+{"testID":40,"messageType":"print","message":"???? Room type migration completed","type":"print","time":6362}
+{"testID":40,"messageType":"print","message":"??? Module migrations completed","type":"print","time":6363}
+{"testID":38,"messageType":"print","message":"???? Service category migration completed","type":"print","time":6363}
+{"testID":38,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":6364}
+{"testID":40,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":6365}
+{"testID":40,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":6369}
+{"testID":38,"messageType":"print","message":"???? Room type migration completed","type":"print","time":6372}
+{"testID":38,"messageType":"print","message":"??? Module migrations completed","type":"print","time":6374}
+{"testID":38,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":6377}
+{"testID":38,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":6379}
+{"testID":40,"messageType":"print","message":"???? Event emitted: TEST_EVENT (e153371a...)","type":"print","time":6382}
+{"testID":40,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6385}
+{"testID":40,"messageType":"print","message":"???? Event emitted: TEST_EVENT (0404fbbb...)","type":"print","time":6386}
+{"testID":40,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6388}
+{"testID":40,"messageType":"print","message":"???? Event emitted: TEST_EVENT (d140a48d...)","type":"print","time":6390}
+{"testID":40,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6392}
+{"testID":40,"messageType":"print","message":"???? Event emitted: TEST_EVENT (9413c375...)","type":"print","time":6393}
+{"testID":40,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6395}
+{"testID":40,"messageType":"print","message":"???? Event emitted: TEST_EVENT (b6b0defc...)","type":"print","time":6396}
+{"testID":40,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6396}
+{"testID":40,"messageType":"print","message":"???? Event emitted: TEST_EVENT (3c1ac587...)","type":"print","time":6396}
+{"testID":40,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6396}
+{"testID":40,"messageType":"print","message":"???? Event emitted: TEST_EVENT (0adee25b...)","type":"print","time":6396}
+{"testID":40,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6397}
+{"testID":40,"messageType":"print","message":"???? Event emitted: TEST_EVENT (90bbfc0a...)","type":"print","time":6397}
+{"testID":40,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6397}
+{"testID":40,"messageType":"print","message":"???? Event emitted: TEST_EVENT (7f8194b0...)","type":"print","time":6398}
+{"testID":40,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6398}
+{"testID":40,"messageType":"print","message":"???? Event emitted: TEST_EVENT (1ddaefcd...)","type":"print","time":6398}
+{"testID":40,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6398}
+{"testID":40,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6399}
+{"test":{"id":41,"name":"EventService Tests getUnsyncedEvents returns oldest first","suiteID":6,"groupIDs":[30,32],"metadata":{"skip":false,"skipReason":null},"line":97,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/event_service_test.dart"},"type":"testStart","time":6400}
+{"testID":41,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":6408}
+{"testID":41,"messageType":"print","message":"?????? SecureStorage Error (getDatabaseKey): MissingPluginException(No implementation found for method read on channel plugins.it_nomads.com/flutter_secure_storage)","type":"print","time":6409}
+{"testID":38,"messageType":"print","message":"???? Generated temporary home_shop_id (not persisted): shop_1771558246063_3194","type":"print","time":6418}
+{"testID":38,"messageType":"print","message":"???? Generated new device_id: device_1771558246064_4708","type":"print","time":6420}
+{"testID":41,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":6420}
+{"testID":41,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":6421}
+{"testID":41,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":6423}
+{"testID":38,"messageType":"print","message":"???? Event emitted: SALE (39b2a3f0...)","type":"print","time":6431}
+{"testID":41,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":6436}
+{"testID":38,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6437}
+{"testID":38,"messageType":"print","message":"???? Event emitted: INVENTORY_CHANGE (55923176...)","type":"print","time":6437}
+{"testID":38,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6437}
+{"testID":41,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":6437}
+{"testID":38,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6438}
+{"test":{"id":42,"name":"Phase 1 Integration Tests Cash count flow emits correct events","suiteID":8,"groupIDs":[34,37],"metadata":{"skip":false,"skipReason":null},"line":62,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/integration_test.dart"},"type":"testStart","time":6438}
+{"testID":41,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":6439}
+{"testID":41,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":6440}
+{"testID":41,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":6442}
+{"testID":41,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":6443}
+{"testID":42,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":6444}
+{"testID":42,"messageType":"print","message":"?????? SecureStorage Error (getDatabaseKey): MissingPluginException(No implementation found for method read on channel plugins.it_nomads.com/flutter_secure_storage)","type":"print","time":6445}
+{"testID":41,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 5, readOnly: false, singleInstance: false}}}","type":"print","time":6457}
+{"testID":41,"messageType":"print","message":"???? Service category migration completed","type":"print","time":6458}
+{"testID":42,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":6459}
+{"testID":41,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":6460}
+{"testID":42,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":6460}
+{"testID":42,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":6462}
+{"testID":41,"messageType":"print","message":"???? Room type migration completed","type":"print","time":6466}
+{"testID":41,"messageType":"print","message":"??? Module migrations completed","type":"print","time":6469}
+{"testID":41,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":6473}
+{"testID":41,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":6475}
+{"testID":42,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":6475}
+{"testID":42,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":6477}
+{"testID":42,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":6478}
+{"testID":42,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":6480}
+{"testID":42,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":6481}
+{"testID":42,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":6484}
+{"testID":41,"messageType":"print","message":"???? Event emitted: TEST_EVENT (c25ae70e...)","type":"print","time":6487}
+{"testID":41,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6487}
+{"testID":42,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 2, readOnly: false, singleInstance: false}}}","type":"print","time":6494}
+{"testID":42,"messageType":"print","message":"???? Service category migration completed","type":"print","time":6495}
+{"testID":42,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":6495}
+{"testID":42,"messageType":"print","message":"???? Room type migration completed","type":"print","time":6500}
+{"testID":41,"messageType":"print","message":"???? Event emitted: TEST_EVENT (99282fb9...)","type":"print","time":6501}
+{"testID":41,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6503}
+{"testID":42,"messageType":"print","message":"??? Module migrations completed","type":"print","time":6503}
+{"testID":41,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6504}
+{"test":{"id":43,"name":"EventService Tests markEventSynced updates sync status","suiteID":6,"groupIDs":[30,32],"metadata":{"skip":false,"skipReason":null},"line":116,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/event_service_test.dart"},"type":"testStart","time":6504}
+{"testID":42,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":6506}
+{"testID":43,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":6508}
+{"testID":42,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":6509}
+{"testID":43,"messageType":"print","message":"?????? SecureStorage Error (getDatabaseKey): MissingPluginException(No implementation found for method read on channel plugins.it_nomads.com/flutter_secure_storage)","type":"print","time":6509}
+{"testID":43,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":6520}
+{"testID":43,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":6522}
+{"testID":43,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":6523}
+{"testID":42,"messageType":"print","message":"???? Event emitted: CASH_COUNT (f5a5d093...)","type":"print","time":6523}
+{"testID":42,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6524}
+{"testID":42,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6524}
+{"test":{"id":44,"name":"Phase 1 Integration Tests Accounting closing with disparity emits both events","suiteID":8,"groupIDs":[34,37],"metadata":{"skip":false,"skipReason":null},"line":79,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/integration_test.dart"},"type":"testStart","time":6525}
+{"testID":44,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":6530}
+{"testID":44,"messageType":"print","message":"?????? SecureStorage Error (getDatabaseKey): MissingPluginException(No implementation found for method read on channel plugins.it_nomads.com/flutter_secure_storage)","type":"print","time":6531}
+{"testID":43,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":6534}
+{"testID":43,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":6536}
+{"testID":43,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":6538}
+{"testID":43,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":6539}
+{"testID":43,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":6541}
+{"testID":43,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":6542}
+{"testID":44,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":6545}
+{"testID":44,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":6546}
+{"testID":44,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":6547}
+{"testID":43,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 6, readOnly: false, singleInstance: false}}}","type":"print","time":6554}
+{"testID":43,"messageType":"print","message":"???? Service category migration completed","type":"print","time":6555}
+{"testID":43,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":6556}
+{"testID":44,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":6559}
+{"testID":43,"messageType":"print","message":"???? Room type migration completed","type":"print","time":6559}
+{"testID":43,"messageType":"print","message":"??? Module migrations completed","type":"print","time":6560}
+{"testID":44,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":6560}
+{"testID":44,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":6562}
+{"testID":43,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":6563}
+{"testID":44,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":6563}
+{"testID":43,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":6565}
+{"testID":44,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":6565}
+{"testID":44,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":6567}
+{"testID":43,"messageType":"print","message":"???? Event emitted: TEST_EVENT (072d1e0d...)","type":"print","time":6576}
+{"testID":43,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6578}
+{"testID":43,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6578}
+{"test":{"id":45,"name":"EventService Tests markEventFailed increments sync attempts","suiteID":6,"groupIDs":[30,32],"metadata":{"skip":false,"skipReason":null},"line":128,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/event_service_test.dart"},"type":"testStart","time":6579}
+{"testID":44,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 3, readOnly: false, singleInstance: false}}}","type":"print","time":6581}
+{"testID":44,"messageType":"print","message":"???? Service category migration completed","type":"print","time":6582}
+{"testID":44,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":6584}
+{"testID":45,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":6585}
+{"testID":45,"messageType":"print","message":"?????? SecureStorage Error (getDatabaseKey): MissingPluginException(No implementation found for method read on channel plugins.it_nomads.com/flutter_secure_storage)","type":"print","time":6587}
+{"testID":44,"messageType":"print","message":"???? Room type migration completed","type":"print","time":6590}
+{"testID":44,"messageType":"print","message":"??? Module migrations completed","type":"print","time":6591}
+{"testID":44,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":6595}
+{"testID":44,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":6597}
+{"testID":45,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":6597}
+{"testID":45,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":6598}
+{"testID":45,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":6602}
+{"testID":45,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":6610}
+{"testID":45,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":6611}
+{"testID":45,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":6612}
+{"testID":44,"messageType":"print","message":"???? Event emitted: ACCOUNTING_CLOSING (96a47ea4...)","type":"print","time":6613}
+{"testID":45,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":6614}
+{"testID":44,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6615}
+{"testID":45,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":6615}
+{"testID":44,"messageType":"print","message":"???? Event emitted: DISPARITY (2be144bb...)","type":"print","time":6616}
+{"testID":44,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6617}
+{"testID":45,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":6618}
+{"testID":44,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6618}
+{"test":{"id":46,"name":"Phase 1 Integration Tests Inventory operations emit correct events","suiteID":8,"groupIDs":[34,37],"metadata":{"skip":false,"skipReason":null},"line":107,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/integration_test.dart"},"type":"testStart","time":6619}
+{"testID":46,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":6624}
+{"testID":46,"messageType":"print","message":"?????? SecureStorage Error (getDatabaseKey): MissingPluginException(No implementation found for method read on channel plugins.it_nomads.com/flutter_secure_storage)","type":"print","time":6625}
+{"testID":45,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 7, readOnly: false, singleInstance: false}}}","type":"print","time":6629}
+{"testID":45,"messageType":"print","message":"???? Service category migration completed","type":"print","time":6631}
+{"testID":45,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":6633}
+{"testID":46,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":6635}
+{"testID":46,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":6637}
+{"testID":46,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":6638}
+{"testID":45,"messageType":"print","message":"???? Room type migration completed","type":"print","time":6638}
+{"testID":45,"messageType":"print","message":"??? Module migrations completed","type":"print","time":6640}
+{"testID":45,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":6643}
+{"testID":45,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":6645}
+{"testID":46,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":6648}
+{"testID":46,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":6653}
+{"testID":46,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":6660}
+{"testID":46,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":6661}
+{"testID":46,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":6663}
+{"testID":46,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":6665}
+{"testID":45,"messageType":"print","message":"???? Event emitted: TEST_EVENT (167869ac...)","type":"print","time":6669}
+{"testID":45,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6670}
+{"testID":45,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6673}
+{"test":{"id":47,"name":"EventService Tests getEventsByType filters correctly","suiteID":6,"groupIDs":[30,32],"metadata":{"skip":false,"skipReason":null},"line":148,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/event_service_test.dart"},"type":"testStart","time":6674}
+{"testID":47,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":6679}
+{"testID":46,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 4, readOnly: false, singleInstance: false}}}","type":"print","time":6679}
+{"testID":47,"messageType":"print","message":"?????? SecureStorage Error (getDatabaseKey): MissingPluginException(No implementation found for method read on channel plugins.it_nomads.com/flutter_secure_storage)","type":"print","time":6680}
+{"testID":46,"messageType":"print","message":"???? Service category migration completed","type":"print","time":6680}
+{"testID":46,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":6682}
+{"testID":46,"messageType":"print","message":"???? Room type migration completed","type":"print","time":6688}
+{"testID":46,"messageType":"print","message":"??? Module migrations completed","type":"print","time":6689}
+{"testID":46,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":6692}
+{"testID":47,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":6694}
+{"testID":47,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":6695}
+{"testID":47,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":6696}
+{"testID":46,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":6697}
+{"testID":47,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":6712}
+{"testID":47,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":6713}
+{"testID":46,"messageType":"print","message":"???? Event emitted: INVENTORY_CREATE (5736bd19...)","type":"print","time":6714}
+{"testID":47,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":6715}
+{"testID":46,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6718}
+{"testID":46,"messageType":"print","message":"???? Event emitted: INVENTORY_UPDATE (fb64233a...)","type":"print","time":6719}
+{"testID":46,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6719}
+{"testID":46,"messageType":"print","message":"???? Event emitted: INVENTORY_DELETE (23819a4d...)","type":"print","time":6719}
+{"testID":47,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":6719}
+{"testID":46,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6719}
+{"testID":46,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6720}
+{"test":{"id":48,"name":"Phase 1 Integration Tests All events have shop_id and device_id","suiteID":8,"groupIDs":[34,37],"metadata":{"skip":false,"skipReason":null},"line":146,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/integration_test.dart"},"type":"testStart","time":6720}
+{"testID":47,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":6721}
+{"testID":47,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":6723}
+{"testID":48,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":6726}
+{"testID":48,"messageType":"print","message":"?????? SecureStorage Error (getDatabaseKey): MissingPluginException(No implementation found for method read on channel plugins.it_nomads.com/flutter_secure_storage)","type":"print","time":6727}
+{"testID":47,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 8, readOnly: false, singleInstance: false}}}","type":"print","time":6740}
+{"testID":47,"messageType":"print","message":"???? Service category migration completed","type":"print","time":6740}
+{"testID":47,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":6741}
+{"testID":48,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":6742}
+{"testID":48,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":6744}
+{"testID":47,"messageType":"print","message":"???? Room type migration completed","type":"print","time":6746}
+{"testID":48,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":6747}
+{"testID":47,"messageType":"print","message":"??? Module migrations completed","type":"print","time":6748}
+{"testID":47,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":6753}
+{"testID":47,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":6757}
+{"testID":48,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":6762}
+{"testID":48,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":6764}
+{"testID":48,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":6768}
+{"testID":47,"messageType":"print","message":"???? Event emitted: SALE (da39321f...)","type":"print","time":6769}
+{"testID":48,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":6770}
+{"testID":47,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6770}
+{"testID":47,"messageType":"print","message":"???? Event emitted: EXPENSE (69af1989...)","type":"print","time":6771}
+{"testID":48,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":6771}
+{"testID":47,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6772}
+{"testID":48,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":6773}
+{"testID":47,"messageType":"print","message":"???? Event emitted: SALE (63ba9da2...)","type":"print","time":6774}
+{"testID":47,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6775}
+{"testID":47,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6777}
+{"test":{"id":49,"name":"EventService Tests getEventCount returns correct count","suiteID":6,"groupIDs":[30,32],"metadata":{"skip":false,"skipReason":null},"line":170,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/event_service_test.dart"},"type":"testStart","time":6777}
+{"testID":49,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":6786}
+{"testID":49,"messageType":"print","message":"?????? SecureStorage Error (getDatabaseKey): MissingPluginException(No implementation found for method read on channel plugins.it_nomads.com/flutter_secure_storage)","type":"print","time":6786}
+{"testID":48,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 5, readOnly: false, singleInstance: false}}}","type":"print","time":6789}
+{"testID":48,"messageType":"print","message":"???? Service category migration completed","type":"print","time":6791}
+{"testID":48,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":6792}
+{"testID":48,"messageType":"print","message":"???? Room type migration completed","type":"print","time":6797}
+{"testID":49,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":6798}
+{"testID":49,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":6799}
+{"testID":48,"messageType":"print","message":"??? Module migrations completed","type":"print","time":6802}
+{"testID":49,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":6804}
+{"testID":48,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":6806}
+{"testID":48,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":6809}
+{"testID":49,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":6815}
+{"testID":49,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":6819}
+{"testID":49,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":6822}
+{"testID":48,"messageType":"print","message":"???? Event emitted: SALE (4f536110...)","type":"print","time":6822}
+{"testID":48,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6823}
+{"testID":49,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":6823}
+{"testID":49,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":6825}
+{"testID":48,"messageType":"print","message":"???? Event emitted: CASH_COUNT (9082b6b9...)","type":"print","time":6825}
+{"testID":48,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6825}
+{"testID":48,"messageType":"print","message":"???? Event emitted: ACCOUNTING_CLOSING (16cc26c0...)","type":"print","time":6826}
+{"testID":48,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6826}
+{"testID":49,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":6826}
+{"testID":48,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6826}
+{"test":{"id":50,"name":"Phase 1 Integration Tests Event integrity maintained across all operations","suiteID":8,"groupIDs":[34,37],"metadata":{"skip":false,"skipReason":null},"line":161,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/integration_test.dart"},"type":"testStart","time":6827}
+{"testID":50,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":6832}
+{"testID":50,"messageType":"print","message":"?????? SecureStorage Error (getDatabaseKey): MissingPluginException(No implementation found for method read on channel plugins.it_nomads.com/flutter_secure_storage)","type":"print","time":6836}
+{"testID":49,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 9, readOnly: false, singleInstance: false}}}","type":"print","time":6840}
+{"testID":49,"messageType":"print","message":"???? Service category migration completed","type":"print","time":6841}
+{"testID":49,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":6841}
+{"testID":49,"messageType":"print","message":"???? Room type migration completed","type":"print","time":6847}
+{"testID":49,"messageType":"print","message":"??? Module migrations completed","type":"print","time":6852}
+{"testID":50,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":6852}
+{"testID":49,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":6853}
+{"testID":50,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":6853}
+{"testID":50,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":6855}
+{"testID":49,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":6855}
+{"testID":50,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":6865}
+{"testID":49,"messageType":"print","message":"???? Event emitted: TEST_EVENT (eb6936b1...)","type":"print","time":6865}
+{"testID":49,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6866}
+{"testID":50,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":6868}
+{"testID":50,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":6870}
+{"testID":49,"messageType":"print","message":"???? Event emitted: TEST_EVENT (7fec6b58...)","type":"print","time":6871}
+{"testID":50,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":6872}
+{"testID":49,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6872}
+{"testID":49,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6873}
+{"test":{"id":51,"name":"EventService Tests verifyEventIntegrity works","suiteID":6,"groupIDs":[30,32],"metadata":{"skip":false,"skipReason":null},"line":188,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/event_service_test.dart"},"type":"testStart","time":6873}
+{"testID":50,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":6874}
+{"testID":50,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":6875}
+{"testID":51,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":6878}
+{"testID":51,"messageType":"print","message":"?????? SecureStorage Error (getDatabaseKey): MissingPluginException(No implementation found for method read on channel plugins.it_nomads.com/flutter_secure_storage)","type":"print","time":6880}
+{"testID":50,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 6, readOnly: false, singleInstance: false}}}","type":"print","time":6888}
+{"testID":50,"messageType":"print","message":"???? Service category migration completed","type":"print","time":6889}
+{"testID":50,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":6890}
+{"testID":51,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":6892}
+{"testID":51,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":6893}
+{"testID":51,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":6894}
+{"testID":50,"messageType":"print","message":"???? Room type migration completed","type":"print","time":6894}
+{"testID":50,"messageType":"print","message":"??? Module migrations completed","type":"print","time":6895}
+{"testID":50,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":6898}
+{"testID":50,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":6902}
+{"testID":51,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":6908}
+{"testID":51,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":6911}
+{"testID":51,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":6913}
+{"testID":50,"messageType":"print","message":"???? Event emitted: SALE (2bb71c1b...)","type":"print","time":6915}
+{"testID":51,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":6921}
+{"testID":51,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":6921}
+{"testID":50,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6922}
+{"testID":51,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":6923}
+{"testID":50,"messageType":"print","message":"???? Event emitted: EXPENSE (9ab7b27b...)","type":"print","time":6924}
+{"testID":50,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6926}
+{"testID":50,"messageType":"print","message":"???? Event emitted: INVENTORY_CHANGE (ca4ae86c...)","type":"print","time":6927}
+{"testID":50,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6927}
+{"testID":50,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6927}
+{"test":{"id":52,"name":"Phase 1 Integration Tests Unsynced events query works correctly","suiteID":8,"groupIDs":[34,37],"metadata":{"skip":false,"skipReason":null},"line":183,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/integration_test.dart"},"type":"testStart","time":6929}
+{"testID":51,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 10, readOnly: false, singleInstance: false}}}","type":"print","time":6937}
+{"testID":52,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":6938}
+{"testID":51,"messageType":"print","message":"???? Service category migration completed","type":"print","time":6938}
+{"testID":52,"messageType":"print","message":"?????? SecureStorage Error (getDatabaseKey): MissingPluginException(No implementation found for method read on channel plugins.it_nomads.com/flutter_secure_storage)","type":"print","time":6938}
+{"testID":51,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":6939}
+{"testID":51,"messageType":"print","message":"???? Room type migration completed","type":"print","time":6945}
+{"testID":51,"messageType":"print","message":"??? Module migrations completed","type":"print","time":6946}
+{"testID":51,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":6948}
+{"testID":52,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":6948}
+{"testID":52,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":6954}
+{"testID":52,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":6956}
+{"testID":51,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":6957}
+{"testID":51,"messageType":"print","message":"???? Event emitted: TEST_EVENT (d97813f8...)","type":"print","time":6970}
+{"testID":52,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":6972}
+{"testID":51,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":6972}
+{"testID":51,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6973}
+{"test":{"id":53,"name":"(tearDownAll)","suiteID":6,"groupIDs":[30],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":6973}
+{"testID":52,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":6974}
+{"testID":52,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":6976}
+{"testID":53,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":6976}
+{"testID":52,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":6978}
+{"testID":52,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":6979}
+{"testID":52,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":6980}
+{"testID":52,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 7, readOnly: false, singleInstance: false}}}","type":"print","time":6997}
+{"testID":52,"messageType":"print","message":"???? Service category migration completed","type":"print","time":7000}
+{"testID":52,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":7004}
+{"testID":52,"messageType":"print","message":"???? Room type migration completed","type":"print","time":7009}
+{"testID":52,"messageType":"print","message":"??? Module migrations completed","type":"print","time":7010}
+{"testID":52,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":7014}
+{"suite":{"id":54,"platform":"vm","path":"C:/dev/Mbeckapp_seller-4ab538ed/test/performance_monitor_test.dart"},"type":"suite","time":7028}
+{"test":{"id":55,"name":"loading C:/dev/Mbeckapp_seller-4ab538ed/test/performance_monitor_test.dart","suiteID":54,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":7028}
+{"testID":52,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":7032}
+{"testID":52,"messageType":"print","message":"???? Event emitted: SALE (39fa706f...)","type":"print","time":7032}
+{"testID":52,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":7032}
+{"testID":52,"messageType":"print","message":"???? Event emitted: SALE (e1f2bf93...)","type":"print","time":7045}
+{"testID":52,"messageType":"print","message":"?????? LAN Sync skipped: Not listening","type":"print","time":7047}
+{"testID":52,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7053}
+{"test":{"id":56,"name":"(tearDownAll)","suiteID":8,"groupIDs":[34],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":7054}
+{"testID":56,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":7057}
+{"suite":{"id":57,"platform":"vm","path":"C:/dev/Mbeckapp_seller-4ab538ed/test/performance_simulation_test.dart"},"type":"suite","time":7090}
+{"test":{"id":58,"name":"loading C:/dev/Mbeckapp_seller-4ab538ed/test/performance_simulation_test.dart","suiteID":57,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":7090}
+{"testID":27,"error":"Failed to load \"C:/dev/Mbeckapp_seller-4ab538ed/test/models/shop_subscription_test.dart\":\nCompilation failed for testPath=C:/dev/Mbeckapp_seller-4ab538ed/test/models/shop_subscription_test.dart: test/models/shop_subscription_test.dart:6:5: Error: 'Shop' isn't a type.\n    Shop createShop({required String tier}) {\n    ^^^^\ntest/models/shop_subscription_test.dart:7:14: Error: Method not found: 'Shop'.\n      return Shop(\n             ^^^^\n.","stackTrace":"","isFailure":false,"type":"error","time":7613}
+{"testID":27,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":7613}
+{"suite":{"id":59,"platform":"vm","path":"C:/dev/Mbeckapp_seller-4ab538ed/test/performance_sync_test.dart"},"type":"suite","time":7614}
+{"test":{"id":60,"name":"loading C:/dev/Mbeckapp_seller-4ab538ed/test/performance_sync_test.dart","suiteID":59,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":7614}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":29,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":13030}
+{"group":{"id":61,"suiteID":28,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":null,"column":null,"url":null},"type":"group","time":13030}
+{"test":{"id":62,"name":"(setUpAll)","suiteID":28,"groupIDs":[61],"metadata":{"skip":false,"skipReason":null},"line":12,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/performance_integration_test.dart"},"type":"testStart","time":13031}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":62,"messageType":"print","message":"???? Generated temporary home_shop_id (not persisted): shop_1771558252919_9830","type":"print","time":13271}
+{"testID":62,"messageType":"print","message":"???? Generated new device_id: device_1771558252922_2719","type":"print","time":13272}
+{"testID":62,"messageType":"print","message":"???? Checking for existing broadcasts for shop: shop_1771558252919_9830","type":"print","time":13272}
+{"testID":55,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":13393}
+{"group":{"id":63,"suiteID":54,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":3,"line":null,"column":null,"url":null},"type":"group","time":13393}
+{"test":{"id":64,"name":"PerformanceMonitor traces duration correctly","suiteID":54,"groupIDs":[63],"metadata":{"skip":false,"skipReason":null},"line":5,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/performance_monitor_test.dart"},"type":"testStart","time":13393}
+{"testID":60,"error":"Failed to load \"C:/dev/Mbeckapp_seller-4ab538ed/test/performance_sync_test.dart\":\nCompilation failed for testPath=C:/dev/Mbeckapp_seller-4ab538ed/test/performance_sync_test.dart: test/performance_sync_test.dart:79:25: Error: Method not found: 'Event'.\n    final remoteEvent = Event(\n                        ^^^^^\n.","stackTrace":"","isFailure":false,"type":"error","time":13500}
+{"testID":60,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":13500}
+{"suite":{"id":65,"platform":"vm","path":"C:/dev/Mbeckapp_seller-4ab538ed/test/server_test.dart"},"type":"suite","time":13501}
+{"test":{"id":66,"name":"loading C:/dev/Mbeckapp_seller-4ab538ed/test/server_test.dart","suiteID":65,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":13501}
+{"testID":64,"messageType":"print","message":"?????? Perf: test_trace = 103ms","type":"print","time":13534}
+{"testID":64,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13536}
+{"test":{"id":67,"name":"PerformanceMonitor handles missing traces gracefully","suiteID":54,"groupIDs":[63],"metadata":{"skip":false,"skipReason":null},"line":16,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/performance_monitor_test.dart"},"type":"testStart","time":13536}
+{"testID":67,"messageType":"print","message":"?????? PerformanceMonitor: Trace \"non_existent_trace\" not found.","type":"print","time":13542}
+{"testID":67,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13543}
+{"test":{"id":68,"name":"PerformanceMonitor generates report correctly","suiteID":54,"groupIDs":[63],"metadata":{"skip":false,"skipReason":null},"line":22,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/performance_monitor_test.dart"},"type":"testStart","time":13543}
+{"testID":68,"messageType":"print","message":"?????? Perf: trace_1 = 0ms","type":"print","time":13550}
+{"testID":68,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13551}
+{"suite":{"id":69,"platform":"vm","path":"C:/dev/Mbeckapp_seller-4ab538ed/test/theme_test.dart"},"type":"suite","time":13591}
+{"test":{"id":70,"name":"loading C:/dev/Mbeckapp_seller-4ab538ed/test/theme_test.dart","suiteID":69,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":13591}
+{"testID":58,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":13840}
+{"group":{"id":71,"suiteID":57,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":null,"column":null,"url":null},"type":"group","time":13840}
+{"test":{"id":72,"name":"(setUpAll)","suiteID":57,"groupIDs":[71],"metadata":{"skip":false,"skipReason":null},"line":16,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/performance_simulation_test.dart"},"type":"testStart","time":13840}
+{"testID":72,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":14045}
+{"testID":72,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":14103}
+{"testID":72,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":14105}
+{"testID":72,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":14106}
+{"testID":72,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":14122}
+{"testID":72,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":14124}
+{"testID":72,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":14126}
+{"testID":72,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":14127}
+{"testID":72,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":14128}
+{"testID":72,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":14130}
+{"testID":72,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 1, readOnly: false, singleInstance: false}}}","type":"print","time":14154}
+{"testID":72,"messageType":"print","message":"???? Service category migration completed","type":"print","time":14156}
+{"testID":72,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":14157}
+{"testID":72,"messageType":"print","message":"???? Room type migration completed","type":"print","time":14160}
+{"testID":72,"messageType":"print","message":"??? Module migrations completed","type":"print","time":14162}
+{"testID":72,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":14164}
+{"testID":72,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":14168}
+{"testID":72,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":14178}
+{"test":{"id":73,"name":"Performance Simulation Loop","suiteID":57,"groupIDs":[71],"metadata":{"skip":false,"skipReason":null},"line":52,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/performance_simulation_test.dart"},"type":"testStart","time":14178}
+{"testID":73,"messageType":"print","message":"???? Registering module routes...","type":"print","time":14220}
+{"testID":73,"messageType":"print","message":"?????? Restaurant menu route not registered by modules, adding fallback","type":"print","time":14222}
+{"testID":73,"messageType":"print","message":"?????? Services catalog route not registered by modules, adding fallback","type":"print","time":14224}
+{"testID":73,"messageType":"print","message":"?????? Perf: API:GET:api/v1/status = 5ms | {status: 200}","type":"print","time":14225}
+{"testID":73,"messageType":"print","message":"?????? Perf: API:GET:api/v1/restaurant/menu = 8ms | {status: 200}","type":"print","time":14226}
+{"testID":73,"messageType":"print","message":"?????? Perf: API:GET:api/v1/restaurant/menu = 1ms | {status: 200}","type":"print","time":14227}
+{"testID":73,"messageType":"print","message":"?????? Perf: API:GET:api/v1/restaurant/menu = 1ms | {status: 200}","type":"print","time":14229}
+{"testID":73,"messageType":"print","message":"?????? Perf: API:GET:api/v1/restaurant/menu = 1ms | {status: 200}","type":"print","time":14231}
+{"testID":73,"messageType":"print","message":"?????? Perf: API:GET:api/v1/restaurant/menu = 1ms | {status: 200}","type":"print","time":14233}
+{"testID":73,"messageType":"print","message":"?????? Perf: API:GET:api/v1/restaurant/menu = 1ms | {status: 200}","type":"print","time":14253}
+{"testID":73,"messageType":"print","message":"?????? Perf: API:GET:api/v1/restaurant/menu = 2ms | {status: 200}","type":"print","time":14253}
+{"testID":73,"messageType":"print","message":"?????? Perf: API:GET:api/v1/restaurant/menu = 2ms | {status: 200}","type":"print","time":14254}
+{"testID":73,"messageType":"print","message":"?????? Perf: API:GET:api/v1/restaurant/menu = 0ms | {status: 200}","type":"print","time":14254}
+{"testID":73,"messageType":"print","message":"?????? Perf: API:GET:api/v1/restaurant/menu = 2ms | {status: 200}","type":"print","time":14254}
+{"testID":73,"messageType":"print","message":"Total duration for 10 menu requests: 23ms","type":"print","time":14254}
+{"testID":73,"messageType":"print","message":"?????? Perf: API:POST:api/v1/cart/checkout = 1ms | {status: 401}","type":"print","time":14254}
+{"testID":73,"messageType":"print","message":"Checkout Status: 401","type":"print","time":14255}
+{"testID":73,"messageType":"print","message":"Checkout Error Body: {\"error\": \"Invalid or missing authentication token\"}","type":"print","time":14255}
+{"testID":73,"messageType":"print","message":"PERFORMANCE REPORT JSONING START","type":"print","time":14255}
+{"testID":73,"messageType":"print","message":"{\"API:GET:api/v1/status\":{\"count\":1,\"min_ms\":5,\"max_ms\":5,\"avg_ms\":\"5.00\",\"p50_ms\":5,\"p95_ms\":5},\"API:GET:api/v1/restaurant/menu\":{\"count\":10,\"min_ms\":0,\"max_ms\":8,\"avg_ms\":\"1.90\",\"p50_ms\":1,\"p95_ms\":8},\"API:POST:api/v1/cart/checkout\":{\"count\":1,\"min_ms\":1,\"max_ms\":1,\"avg_ms\":\"1.00\",\"p50_ms\":1,\"p95_ms\":1},\"custom_metrics\":{}}","type":"print","time":14256}
+{"testID":73,"messageType":"print","message":"PERFORMANCE REPORT JSONING END","type":"print","time":14256}
+{"testID":73,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14257}
+{"test":{"id":74,"name":"(tearDownAll)","suiteID":57,"groupIDs":[71],"metadata":{"skip":false,"skipReason":null},"line":48,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/performance_simulation_test.dart"},"type":"testStart","time":14257}
+{"testID":74,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":14262}
+{"suite":{"id":75,"platform":"vm","path":"C:/dev/Mbeckapp_seller-4ab538ed/test/widgets/demand_pulse_test.dart"},"type":"suite","time":14291}
+{"test":{"id":76,"name":"loading C:/dev/Mbeckapp_seller-4ab538ed/test/widgets/demand_pulse_test.dart","suiteID":75,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":14291}
+{"testID":62,"messageType":"print","message":"???? No existing leader found. We can become leader.","type":"print","time":15306}
+{"testID":62,"messageType":"print","message":"???? Registering module routes...","type":"print","time":15306}
+{"testID":62,"messageType":"print","message":"?????? Restaurant menu route not registered by modules, adding fallback","type":"print","time":15307}
+{"testID":62,"messageType":"print","message":"?????? Services catalog route not registered by modules, adding fallback","type":"print","time":15307}
+{"testID":62,"messageType":"print","message":"???? Server running on http://127.0.0.1:8080","type":"print","time":15308}
+{"testID":62,"messageType":"print","message":"Checking health at: http://127.0.0.1:8080/api/v1/status","type":"print","time":15308}
+{"testID":62,"messageType":"print","message":"??? Failed to start server: 'package:supabase_flutter/src/supabase.dart': Failed assertion: line 45 pos 7: '_instance._isInitialized': You must initialize the supabase instance before calling Supabase.instance","type":"print","time":15309}
+{"testID":62,"error":"'package:supabase_flutter/src/supabase.dart': Failed assertion: line 45 pos 7: '_instance._isInitialized': You must initialize the supabase instance before calling Supabase.instance","stackTrace":"dart:core                                               _AssertionError._throwNew\npackage:supabase_flutter/src/supabase.dart 45:7         Supabase.instance\npackage:mbeck_business/server/local_server.dart 151:32  ShopServer.start\n","isFailure":false,"type":"error","time":15310}
+{"testID":62,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":15310}
+{"test":{"id":77,"name":"(tearDownAll)","suiteID":28,"groupIDs":[61],"metadata":{"skip":false,"skipReason":null},"line":41,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/performance_integration_test.dart"},"type":"testStart","time":15310}
+{"testID":77,"messageType":"print","message":"???? LAN Sync stopped","type":"print","time":15317}
+{"testID":77,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":15318}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":66,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":16492}
+{"group":{"id":78,"suiteID":65,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":null,"column":null,"url":null},"type":"group","time":16492}
+{"group":{"id":79,"suiteID":65,"parentID":78,"name":"ApiRouter","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":14,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/server_test.dart"},"type":"group","time":16492}
+{"test":{"id":80,"name":"ApiRouter GET /api/v1/status returns 200 and online status","suiteID":65,"groupIDs":[78,79],"metadata":{"skip":false,"skipReason":null},"line":58,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/server_test.dart"},"type":"testStart","time":16493}
+{"testID":80,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":16638}
+{"testID":80,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":16686}
+{"testID":80,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":16687}
+{"testID":80,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":16688}
+{"testID":80,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":16702}
+{"testID":80,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":16704}
+{"testID":80,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":16706}
+{"testID":80,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":16707}
+{"testID":80,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":16708}
+{"testID":80,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":16710}
+{"testID":80,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 1, readOnly: false, singleInstance: false}}}","type":"print","time":16730}
+{"testID":80,"messageType":"print","message":"???? Service category migration completed","type":"print","time":16732}
+{"testID":80,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":16734}
+{"testID":80,"messageType":"print","message":"???? Room type migration completed","type":"print","time":16738}
+{"testID":80,"messageType":"print","message":"??? Module migrations completed","type":"print","time":16739}
+{"testID":80,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":16742}
+{"testID":80,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":16744}
+{"testID":80,"messageType":"print","message":"???? Registering module routes...","type":"print","time":16811}
+{"testID":80,"messageType":"print","message":"?????? Restaurant menu route not registered by modules, adding fallback","type":"print","time":16812}
+{"testID":80,"messageType":"print","message":"?????? Services catalog route not registered by modules, adding fallback","type":"print","time":16812}
+{"testID":80,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":16813}
+{"test":{"id":81,"name":"ApiRouter GET /api/v1/inventory/public returns dummy data","suiteID":65,"groupIDs":[78,79],"metadata":{"skip":false,"skipReason":null},"line":69,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/server_test.dart"},"type":"testStart","time":16813}
+{"testID":81,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":16825}
+{"testID":81,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":16826}
+{"testID":81,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":16839}
+{"testID":81,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":16840}
+{"testID":81,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":16842}
+{"testID":81,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":16853}
+{"testID":81,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":16854}
+{"testID":81,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":16856}
+{"testID":81,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":16858}
+{"testID":81,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":16860}
+{"testID":81,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":16861}
+{"testID":81,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 2, readOnly: false, singleInstance: false}}}","type":"print","time":16875}
+{"testID":81,"messageType":"print","message":"???? Service category migration completed","type":"print","time":16877}
+{"testID":81,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":16878}
+{"testID":81,"messageType":"print","message":"???? Room type migration completed","type":"print","time":16883}
+{"testID":81,"messageType":"print","message":"??? Module migrations completed","type":"print","time":16885}
+{"testID":81,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":16888}
+{"testID":81,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":16890}
+{"testID":81,"messageType":"print","message":"???? Registering module routes...","type":"print","time":16894}
+{"testID":81,"messageType":"print","message":"?????? Restaurant menu route not registered by modules, adding fallback","type":"print","time":16894}
+{"testID":81,"messageType":"print","message":"?????? Services catalog route not registered by modules, adding fallback","type":"print","time":16895}
+{"testID":81,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":16901}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":70,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":18586}
+{"group":{"id":82,"suiteID":69,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":4,"line":null,"column":null,"url":null},"type":"group","time":18586}
+{"group":{"id":83,"suiteID":69,"parentID":82,"name":"Design System (Seller App)","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":9,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/theme_test.dart"},"type":"group","time":18586}
+{"test":{"id":84,"name":"Design System (Seller App) AppColors matches emerald green palette","suiteID":69,"groupIDs":[82,83],"metadata":{"skip":false,"skipReason":null},"line":10,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/theme_test.dart"},"type":"testStart","time":18586}
+{"testID":84,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":18638}
+{"group":{"id":85,"suiteID":69,"parentID":82,"name":"ShopThemeConfig (Shared)","metadata":{"skip":false,"skipReason":null},"testCount":3,"line":29,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/theme_test.dart"},"type":"group","time":18638}
+{"test":{"id":86,"name":"ShopThemeConfig (Shared) Standard factory returns defaults","suiteID":69,"groupIDs":[82,85],"metadata":{"skip":false,"skipReason":null},"line":30,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/theme_test.dart"},"type":"testStart","time":18639}
+{"testID":86,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":18644}
+{"test":{"id":87,"name":"ShopThemeConfig (Shared) Parses hex color correctly from JSON","suiteID":69,"groupIDs":[82,85],"metadata":{"skip":false,"skipReason":null},"line":36,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/theme_test.dart"},"type":"testStart","time":18645}
+{"testID":87,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":18654}
+{"test":{"id":88,"name":"ShopThemeConfig (Shared) Fallback to defaults on invalid color","suiteID":69,"groupIDs":[82,85],"metadata":{"skip":false,"skipReason":null},"line":49,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/theme_test.dart"},"type":"testStart","time":18655}
+{"testID":88,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":18659}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":76,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":19346}
+{"group":{"id":89,"suiteID":75,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":null,"column":null,"url":null},"type":"group","time":19346}
+{"test":{"id":90,"name":"DemandPulseCard builds successfully","suiteID":75,"groupIDs":[89],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":22,"root_column":3,"root_url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/widgets/demand_pulse_test.dart"},"type":"testStart","time":19346}
+{"testID":90,"messageType":"print","message":"???? Generated temporary home_shop_id (not persisted): shop_1771558259654_4095","type":"print","time":20042}
+{"testID":90,"messageType":"print","message":"???? Using cached shop data (offline): 'package:supabase_flutter/src/supabase.dart': Failed assertion: line 45 pos 7: '_instance._isInitialized': You must initialize the supabase instance before calling Supabase.instance","type":"print","time":20050}
+{"testID":90,"messageType":"print","message":"???? Generated new device_id: device_1771558259657_7208","type":"print","time":20051}
+{"testID":90,"messageType":"print","message":"???? Using cached shop data (offline): 'package:supabase_flutter/src/supabase.dart': Failed assertion: line 45 pos 7: '_instance._isInitialized': You must initialize the supabase instance before calling Supabase.instance","type":"print","time":20054}
+{"testID":90,"messageType":"print","message":"?????? Analytics Fetch Failed: 'package:supabase_flutter/src/supabase.dart': Failed assertion: line 45 pos 7: '_instance._isInitialized': You must initialize the supabase instance before calling Supabase.instance","type":"print","time":20054}
+{"testID":90,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20055}
+{"success":false,"type":"done","time":20103}

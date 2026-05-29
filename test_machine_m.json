@@ -1,0 +1,80 @@
+{"protocolVersion":"0.1.1","runnerVersion":null,"pid":50532,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"C:/dev/Mbeckapp_seller-4ab538ed/test/server_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading C:/dev/Mbeckapp_seller-4ab538ed/test/server_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":1}
+{"suite":{"id":2,"platform":"vm","path":"C:/dev/Mbeckapp_seller-4ab538ed/test/performance_integration_test.dart"},"type":"suite","time":4}
+{"test":{"id":3,"name":"loading C:/dev/Mbeckapp_seller-4ab538ed/test/performance_integration_test.dart","suiteID":2,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":4}
+{"suite":{"id":4,"platform":"vm","path":"C:/dev/Mbeckapp_seller-4ab538ed/test/performance_simulation_test.dart"},"type":"suite","time":5}
+{"test":{"id":5,"name":"loading C:/dev/Mbeckapp_seller-4ab538ed/test/performance_simulation_test.dart","suiteID":4,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":5}
+{"count":3,"time":5,"type":"allSuites"}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":3238}
+{"group":{"id":6,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":null,"column":null,"url":null},"type":"group","time":3244}
+{"group":{"id":7,"suiteID":0,"parentID":6,"name":"ApiRouter","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":15,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/server_test.dart"},"type":"group","time":3245}
+{"test":{"id":8,"name":"ApiRouter GET /api/v1/status returns 200 and online status","suiteID":0,"groupIDs":[6,7],"metadata":{"skip":false,"skipReason":null},"line":63,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/server_test.dart"},"type":"testStart","time":3245}
+{"testID":8,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":3671}
+{"testID":3,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":3720}
+{"group":{"id":9,"suiteID":2,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":null,"column":null,"url":null},"type":"group","time":3720}
+{"test":{"id":10,"name":"(setUpAll)","suiteID":2,"groupIDs":[9],"metadata":{"skip":false,"skipReason":null},"line":13,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/performance_integration_test.dart"},"type":"testStart","time":3720}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":8,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":3810}
+{"testID":8,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":3812}
+{"testID":8,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":3814}
+{"testID":8,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":3833}
+{"testID":8,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":3835}
+{"testID":8,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":3836}
+{"testID":8,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":3836}
+{"testID":8,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":3839}
+{"testID":8,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":3843}
+{"testID":8,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 1, readOnly: false, singleInstance: false}}}","type":"print","time":3867}
+{"testID":8,"messageType":"print","message":"???? Service category migration completed","type":"print","time":3868}
+{"testID":8,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":3869}
+{"testID":8,"messageType":"print","message":"???? Room type migration completed","type":"print","time":3876}
+{"testID":8,"messageType":"print","message":"??? Module migrations completed","type":"print","time":3878}
+{"testID":8,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":3882}
+{"testID":8,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":3885}
+{"testID":8,"messageType":"print","message":"???? Registering module routes...","type":"print","time":3998}
+{"testID":8,"messageType":"print","message":"?????? Restaurant menu route not registered by modules, adding fallback","type":"print","time":4018}
+{"testID":8,"messageType":"print","message":"?????? Services catalog route not registered by modules, adding fallback","type":"print","time":4019}
+{"testID":8,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4022}
+{"test":{"id":11,"name":"ApiRouter GET /api/v1/inventory/public returns dummy data","suiteID":0,"groupIDs":[6,7],"metadata":{"skip":false,"skipReason":null},"line":74,"column":5,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/server_test.dart"},"type":"testStart","time":4023}
+{"testID":11,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":4036}
+{"testID":11,"messageType":"print","message":"*** sqflite warning ***\n\nYou are changing sqflite default factory.\nBe aware of the potential side effects. Any library using sqflite\nwill have this factory as the default for all operations.\n\n*** sqflite warning ***\n","type":"print","time":4036}
+{"testID":11,"messageType":"print","message":"    ??? Added column 'name' to 'shops'","type":"print","time":4060}
+{"testID":11,"messageType":"print","message":"    ??? Added column 'enabled_modules' to 'shops'","type":"print","time":4062}
+{"testID":11,"messageType":"print","message":"    ??? Added column 'settings' to 'shops'","type":"print","time":4063}
+{"testID":11,"messageType":"print","message":"    ??? Added column 'total_amount' to 'restaurant_orders'","type":"print","time":4077}
+{"testID":11,"messageType":"print","message":"    ??? Added column 'created_by' to 'restaurant_orders'","type":"print","time":4078}
+{"testID":11,"messageType":"print","message":"    ??? Added column 'preparing_by' to 'restaurant_orders'","type":"print","time":4080}
+{"testID":11,"messageType":"print","message":"    ??? Added column 'ready_by' to 'restaurant_orders'","type":"print","time":4082}
+{"testID":11,"messageType":"print","message":"    ??? Added column 'served_by' to 'restaurant_orders'","type":"print","time":4085}
+{"testID":11,"messageType":"print","message":"    ??? Added column 'completed_by' to 'restaurant_orders'","type":"print","time":4086}
+{"testID":11,"messageType":"print","message":"    ?????? Error adding column 'room_type_id' to 'lodging_rooms': SqfliteFfiException(sqlite_error: 1, , SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: }) DatabaseException(SqliteException(1): while executing, no such table: lodging_rooms, SQL logic error (code 1)\n  Causing statement: ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER, parameters: ) sql 'ALTER TABLE lodging_rooms ADD COLUMN room_type_id INTEGER' {details: {database: {path: :memory:, id: 2, readOnly: false, singleInstance: false}}}","type":"print","time":4101}
+{"testID":11,"messageType":"print","message":"???? Service category migration completed","type":"print","time":4102}
+{"testID":11,"messageType":"print","message":"???? Entertainment asset type migration completed","type":"print","time":4103}
+{"testID":11,"messageType":"print","message":"???? Room type migration completed","type":"print","time":4110}
+{"testID":11,"messageType":"print","message":"??? Module migrations completed","type":"print","time":4111}
+{"testID":11,"messageType":"print","message":"    ??? Added column 'variationsJson' to 'inventory'","type":"print","time":4114}
+{"testID":11,"messageType":"print","message":"    ??? Added column 'source_module' to 'inventory'","type":"print","time":4116}
+{"testID":11,"messageType":"print","message":"???? Registering module routes...","type":"print","time":4121}
+{"testID":11,"messageType":"print","message":"?????? Restaurant menu route not registered by modules, adding fallback","type":"print","time":4121}
+{"testID":11,"messageType":"print","message":"?????? Services catalog route not registered by modules, adding fallback","type":"print","time":4122}
+{"testID":11,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4127}
+{"testID":10,"error":"MissingPluginException(No implementation found for method getAll on channel plugins.flutter.io/shared_preferences)","stackTrace":"dart:async                                                           _Completer.completeError\npackage:shared_preferences/src/shared_preferences_legacy.dart 90:19  SharedPreferences.getInstance\n===== asynchronous gap ===========================\ndart:async                                                           _CustomZone.registerBinaryCallback\npackage:shared_preferences/src/shared_preferences_legacy.dart 85:13  SharedPreferences.getInstance\npackage:supabase_flutter/src/local_storage.dart 129:38               SharedPreferencesGotrueAsyncStorage._initialize\npackage:supabase_flutter/src/local_storage.dart 120:5                new SharedPreferencesGotrueAsyncStorage\npackage:supabase_flutter/src/supabase.dart 110:27                    Supabase.initialize\ntest\\performance_integration_test.dart 14:26                         main.<fn>\n","isFailure":false,"type":"error","time":4166}
+{"testID":10,"error":"'package:flutter/src/foundation/binding.dart': Failed assertion: line 336 pos 16: '_debugInitializedType == null': is not true.","stackTrace":"dart:core                                           _AssertionError._throwNew\npackage:flutter/src/foundation/binding.dart 336:16  BindingBase.checkInstance.<fn>\npackage:flutter/src/foundation/binding.dart 401:6   BindingBase.checkInstance\npackage:flutter_test/src/binding.dart 109:72        TestDefaultBinaryMessengerBinding.instance\ntest\\performance_integration_test.dart 22:39        main.<fn>\n","isFailure":false,"type":"error","time":4167}
+{"testID":10,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":4168}
+{"test":{"id":12,"name":"(tearDownAll)","suiteID":2,"groupIDs":[9],"metadata":{"skip":false,"skipReason":null},"line":47,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/performance_integration_test.dart"},"type":"testStart","time":4169}
+{"testID":12,"messageType":"print","message":"???? LAN Sync stopped","type":"print","time":4197}
+{"testID":12,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":4197}
+{"testID":5,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":4504}
+{"group":{"id":13,"suiteID":4,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":null,"column":null,"url":null},"type":"group","time":4505}
+{"test":{"id":14,"name":"(setUpAll)","suiteID":4,"groupIDs":[13],"metadata":{"skip":false,"skipReason":null},"line":17,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/performance_simulation_test.dart"},"type":"testStart","time":4505}
+{"testID":14,"error":"MissingPluginException(No implementation found for method getAll on channel plugins.flutter.io/shared_preferences)","stackTrace":"dart:async                                                           _Completer.completeError\npackage:shared_preferences/src/shared_preferences_legacy.dart 90:19  SharedPreferences.getInstance\n===== asynchronous gap ===========================\ndart:async                                                           _CustomZone.registerBinaryCallback\npackage:shared_preferences/src/shared_preferences_legacy.dart 85:13  SharedPreferences.getInstance\npackage:supabase_flutter/src/local_storage.dart 129:38               SharedPreferencesGotrueAsyncStorage._initialize\npackage:supabase_flutter/src/local_storage.dart 120:5                new SharedPreferencesGotrueAsyncStorage\npackage:supabase_flutter/src/supabase.dart 110:27                    Supabase.initialize\ntest\\performance_simulation_test.dart 18:26                          main.<fn>\n","isFailure":false,"type":"error","time":4779}
+{"testID":14,"error":"'package:flutter/src/foundation/binding.dart': Failed assertion: line 336 pos 16: '_debugInitializedType == null': is not true.","stackTrace":"dart:core                                           _AssertionError._throwNew\npackage:flutter/src/foundation/binding.dart 336:16  BindingBase.checkInstance.<fn>\npackage:flutter/src/foundation/binding.dart 401:6   BindingBase.checkInstance\npackage:flutter_test/src/binding.dart 109:72        TestDefaultBinaryMessengerBinding.instance\ntest\\performance_simulation_test.dart 26:39         main.<fn>\n","isFailure":false,"type":"error","time":4780}
+{"testID":14,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":4780}
+{"test":{"id":15,"name":"(tearDownAll)","suiteID":4,"groupIDs":[13],"metadata":{"skip":false,"skipReason":null},"line":54,"column":3,"url":"file:///C:/dev/Mbeckapp_seller-4ab538ed/test/performance_simulation_test.dart"},"type":"testStart","time":4780}
+{"testID":15,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":4784}
+{"success":false,"type":"done","time":4818}

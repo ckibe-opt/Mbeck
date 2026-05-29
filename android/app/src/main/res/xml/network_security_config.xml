@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow cleartext HTTP traffic to local network for POS LAN features -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">localhost</domain>
+        <!-- Common local IPv4 ranges -->
+        <domain includeSubdomains="true">10.0.0.0</domain>
+        <domain includeSubdomains="true">172.16.0.0</domain>
+        <domain includeSubdomains="true">192.168.0.0</domain>
+        <!-- You can specify IP address strings or use base-config for all, but domain config for specific ranges is safer -->
+    </domain-config>
+
+    <!-- Alternative: If IP ranges via domain-config are not fully respected by all OEMs, 
+         we can allow cleartext across the board for debug/local, but restrict it in production 
+         if we had a certificate. Since POS is local IP based without a CA, we often have to permit it. -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:background="@drawable/widget_bg_dark">
+
+    <!-- Top Row: Brand + Status Dot -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Wifi icon -->
+        <ImageView
+            android:id="@+id/widget_wifi_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:contentDescription="Signal icon" />
+
+        <TextView
+            android:id="@+id/widget_shop_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:text="Mbeck Shop"
+            android:textSize="11sp"
+            android:textColor="#FF9CA3AF"
+            android:textStyle="bold"
+            android:letterSpacing="0.05" />
+
+        <!-- Status dot -->
+        <ImageView
+            android:id="@+id/widget_status_dot"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@drawable/widget_dot_offline"
+            android:contentDescription="Status indicator" />
+
+    </LinearLayout>
+
+    <!-- Middle: Status Text + Shop Name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/widget_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFFLINE"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFFFF" />
+
+        <TextView
+            android:id="@+id/widget_subtitle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap to go online"
+            android:textSize="11sp"
+            android:textColor="#FF6B7280"
+            android:layout_marginTop="1dp" />
+
+    </LinearLayout>
+
+    <!-- Bottom Row: IP + Toggle Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/widget_ip_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="10sp"
+            android:textColor="#FF6B7280"
+            android:visibility="gone"
+            android:fontFamily="monospace" />
+
+        <!-- Toggle button -->
+        <FrameLayout
+            android:id="@+id/widget_toggle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/widget_btn_off"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp">
+
+            <TextView
+                android:id="@+id/widget_toggle_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GO LIVE"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFFFF"
+                android:letterSpacing="0.04" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

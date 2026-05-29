@@ -1,0 +1,13 @@
+test: 
+Expected: 'shop_1771558853202_3188'
+  Actual: 'shop_1771558853224_4345'
+   Which: is different.
+          Expected: ... 771558853202_3188
+            Actual: ... 771558853224_4345
+                                  ^
+           Differ at offset 16
+
+---
+test: 
+'package:supabase_flutter/src/supabase.dart': Failed assertion: line 45 pos 7: '_instance._isInitialized': You must initialize the supabase instance before calling Supabase.instance
+---

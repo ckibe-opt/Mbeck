@@ -1,0 +1,209 @@
+# README.md (Project Overview)
+
+**Mbeck Business** (formerly myShop) is a sophisticated, offline-first Point of Sale (POS) and business management ecosystem built with Flutter. Designed for low-connectivity environments, it offers resilient local data persistence (`sqflite`), real-time P2P LAN synchronization (`bonsoir`), and cloud sync capabilities (`supabase`). The application features an advanced AI-driven visual product recognition engine powered by `tflite_flutter` that enables barcode-free inventory scanning.
+
+## Key Features
+- **Offline-First Resilience**: All core commerce features (Cart, Checkout, Inventory) operate independently of the internet. Local SQLite is the primary source of truth.
+- **AI-Powered Visual Recognition**: Uses a quantized `EfficientNet-Lite0` model for feature extraction and visual product matching using Cosine Similarity.
+- **Distributed Sync Engine**:
+  - **LAN Sync**: Real-time peer-to-peer event synchronization across local Wi-Fi networks using Multicast DNS (mDNS) and WebSockets.
+  - **Cloud Sync**: Background sync to Supabase for PRO tier users via an event-driven ledger.
+- **Multi-Module Support**: Core retail functionality extended with specialized modules for Restaurants, Services, Entertainment, and Lodging.
+- **Secure Architecture**: Digital receipt verification via local cryptographic signatures preventing fraud, combined with module-isolated database tables.
+
+## Prerequisites
+- **Framework**: Flutter SDK (>=3.0.0 <4.0.0)
+- **Database Environments**: Android API 21+ or Windows/Linux/macOS (via FFI).
+
+## Quick Start Guide
+1. **Clone & Setup**:
+   ```bash
+   git clone <repository>
+   cd Mbeckapp_seller-4ab538ed
+   flutter pub get
+   ```
+2. **Setup Environment**:
+   Ensure `.env` contains `SUPABASE_URL` and `SUPABASE_ANON_KEY`.
+3. **Run Application**:
+   ```bash
+   flutter run
+   ```
+
+***
+
+# ARCHITECTURE.md (System Design)
+
+The system relies on a **"Heavy Edge, Light Cloud" Event-Sourcing architecture**. The local device handles all immediate transactions, which are then appended to an immutable Event Ledger.
+
+## System Components & Layering
+
+1. **Presentation Layer (`lib/screens/`, `lib/widgets/`)**
+   - Built using Flutter with scoped localized state (`setState`).
+   - Cross-component states managed via `Provider`.
+   - Adheres strictly to `AppColors` and `AppTypography` defined in the internal design system.
+
+2. **Domain/Shared Layer (`packages/mbeck_shared/`)**
+   - Core entity definitions (e.g., `Event`, `Shop`, `Transaction`).
+   - Ensures strict separation of concerns across the monorepo.
+
+3. **Feature Modules (`packages/mbeck_modules/`)**
+   - Independent packages handling specific business sectors (e.g., Lodging reservations, Restaurant orders) with module-isolated database tracking.
+
+4. **Service & Sync Layer (`lib/services/`)**
+   - `EventProcessor`: Acts as the domain projector, reading incoming events and updating materialized views (local SQLite tables).
+   - `LanSyncService` & `LanWebsocketService`: Manages P2P discovery and high-speed data transfer within local networks.
+   - `SyncService`: Background sync handling the push/pull of events to Supabase Edge Functions.
+
+5. **Persistence Layer (`lib/db/db_provider.dart`)**
+   - A singular `sqflite` (with `sqflite_sqlcipher` encryption) database handling all tables and schema migrations.
+
+## Architectural Diagram
+
+```mermaid
+graph TD
+    UI[UI Components] --> |Actions| Services[Service Layer]
+    Services --> |Create Event| Ledger[(Local Event Ledger)]
+    Ledger --> |Project State| Projector[Event Processor]
+    Projector --> |Update Views| DB[(Local SQLite DB)]
+    
+    Ledger <--> |LAN WebSockets| Peers[Other Local Devices]
+    Ledger <--> |Supabase RPC| Cloud[(Supabase Cloud)]
+    
+    UI --> |Read State| DB
+```
+
+## Tech Stack Rationale
+- **Flutter**: Cross-platform capability (Android, Windows) with high native performance.
+- **SQLite (sqflite / sqlcipher)**: Guarantees offline-first ACID compliance. SQLCipher provides at-rest encryption for sensitive financial data.
+- **Event-Sourcing**: Fixes conflict resolution in a multi-master distributed system (LAN + Cloud). Events are appended chronologically and reconciled deterministically.
+- **Supabase**: Utilizes Postgres Row-Level Security (RLS) and Edge Functions to handle massive sync telemetry off the main database thread.
+
+***
+
+# DEVELOPMENT_GUIDE.md (Onboarding & Setup)
+
+## Local Environment Setup
+1. **Repository Structure**:
+   The project is a monorepo containing the main app and isolated logic packages:
+   - `mbeck_business` (App Root)
+   - `packages/mbeck_shared`
+   - `packages/mbeck_modules`
+2. **Dependency Installation**:
+   Initialize packages correctly:
+   ```bash
+   flutter pub get
+   cd packages/mbeck_shared && flutter pub get
+   cd ../mbeck_modules && flutter pub get
+   ```
+
+## Development Rules & Patterns
+- **Database Context**: Never perform operations using `BuildContext` across async gaps without verifying `if (!mounted) return;`.
+- **Atomic Operations**: All logic manipulating the database must append an `Event` object to the Ledger first. Direct `db.update` should only be done by the `EventProcessor`.
+- **Theming**: Absolutely **no hardcoded color values**. Use `AppColors` and `AppTypography` exclusively.
+
+## Running Tests
+Run the test scripts provided in the root directory:
+```bash
+# Minimal sanity test
+.\simple_test.ps1
+
+# Full integration and database checks
+.\detailed_test.ps1
+```
+
+***
+
+# API_REFERENCE.md (Interfaces)
+
+As an Offline-First ecosystem, the primary interfaces are internal Event structures and Cloud RPC endpoints.
+
+## Internal Event Sourcing API
+All system state mutations generate an Event payload.
+
+### `SALE` (Event Payload)
+*   **Description**: Recorded when a transaction is completed.
+*   **Key Fields**:
+    *   `totalAmount` / `amount` (Number)
+    *   `source_module` (String): Originating module (e.g., `retail`, `restaurant`).
+    *   `receiptSignature` (String): Cryptographic proof of the receipt.
+    *   `items` (Array): Array of `{itemId, qty, price, subtotal, discount}`.
+
+### `ORDER_CREATED` (Event Payload)
+*   **Description**: A restaurant/food order placed locally or by a client.
+*   **Key Fields**:
+    *   `order_number` (String)
+    *   `items_json` (JSON String)
+    *   `total` (Number)
+    *   `status` (String)
+
+## Cloud Supabase Edge Functions
+### `POST /functions/v1/sync-events`
+*   **Description**: Ingests batched events from local edges, verifies integrity hashes, and persists to the centralized cloud ledger.
+*   **Payload**: Array of Event JSON objects.
+*   **Response Status**: `200 OK` (Returns `{ inserted_count, skipped_count, errors: [] }`).
+
+***
+
+# DATA_MODELS.md (Database/State)
+
+State is managed via `sqflite` locally and synchronized to Supabase PostgreSQL.
+
+## Core Local Tables (`sqflite`)
+
+1.  **`events` (The Ledger)**
+    *   `id` (TEXT PRIMARY KEY)
+    *   `event_type`, `payload`, `hash` (TEXT)
+    *   `timestamp` (INTEGER)
+    *   `synced` (INTEGER): Sync status flag (0 or 1).
+
+2.  **`inventory`**
+    *   `id` (INTEGER PRIMARY KEY)
+    *   `name`, `category`, `barcode` (TEXT)
+    *   `sellingPrice`, `originalPrice` (REAL)
+    *   `stock` (INTEGER)
+    *   `visual_vector` (TEXT): 1280-dimension float vector for AI recognition.
+
+3.  **`txn` & `transaction_items`**
+    *   Financial immutability maps. Stores total amounts, source modules, and receipt hashes.
+
+4.  **Module-Specific Tables**
+    *   `restaurant_orders`, `services_catalog`, `entertainment_sessions`, `lodging_reservations`. These strictly define module boundaries using `source_module` foreign keys.
+
+## Core Cloud Tables (`supabase_schema.sql`)
+
+1.  **`shops`**
+    *   Tracks businesses, `subscription_tier`, and subscription statuses with RLS applied.
+2.  **`shop_members`**
+    *   Device-level permissions (`role`: OWNER, ADMIN, STAFF).
+3.  **`events`**
+    *   Matches the local ledger perfectly, enriched with `shop_id` and indexed for rapid downstream pulling.
+
+## State Management (`Provider`)
+Top-level app states (Current Shop, Current Theme, Sync Status) are passed down via `ChangeNotifierProvider`.
+
+***
+
+# SECURITY_AND_ENV.md (Configuration)
+
+## Security Practices
+1.  **Offline Database Encryption**: Uses `sqflite_sqlcipher`. The `dbKey` is securely managed via `SecurityService` (using `flutter_secure_storage`).
+2.  **Receipt Integrity**: Transactions output a `receiptSignature` generated via a time+amount hashing algorithm ensuring receipts cannot be spoofed by offline malicious actors.
+3.  **Row Level Security (RLS)**:
+    *   Supabase policies rigorously restrict data access. Event reading requires the user's `device_id` to map to an active `shop_members` list.
+    *   Event inserts are checked dynamically against permission structures via PG triggers.
+4.  **Local Sync Restrictions**: The `EventProcessor` checks `_isEventAuthorizedForRole(eventType, role)` to prevent a cashier device from locally decoding financial/managerial events pushed over LAN.
+
+## Environment Variables
+
+Expected `.env` configuration for Cloud Integration:
+```env
+# Supabase Configuration
+SUPABASE_URL=https://<your-project-id>.supabase.co
+SUPABASE_ANON_KEY=eyJhbGciOiJIUz...
+
+# Edge Function URLs
+SYNC_FUNCTION_URL=https://<your-project-id>.supabase.co/functions/v1/sync-events
+
+# Environment Types
+ENVIRONMENT=production
+```

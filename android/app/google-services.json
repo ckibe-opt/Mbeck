@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "640459391401",
+    "project_id": "mbeck-pos",
+    "storage_bucket": "mbeck-pos.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640459391401:android:80e6c4e80e7d8c824704b8",
+        "android_client_info": {
+          "package_name": "com.mbeck.business"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyux9atbSXg_ezDU5uKr46fonqSDCNEOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
